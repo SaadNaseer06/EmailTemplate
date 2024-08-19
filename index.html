@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .pbd_email-template-container {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      /* Responsive */
+      .footer {
+        background-color: #333;
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+        font-family: Poppins, Arial, sans-serif;
+      }
+      .table-col-1 {
+        width: 50%;
+        padding-right: 10px;
+        vertical-align: top;
+        background: #333;
+        position: relative;
+      }
+      .table-col-1-para {
+        font-family: Poppins, Arial, sans-serif;
+        font-size: 18px;
+        color: #e2bf77;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 1px;
+      }
+      .spacer {
+        background-color: #e2bf77;
+        height: 2px;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        bottom: 11px;
+        width: 70px;
+      }
+      .table-col-2 {
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 20px;
+        vertical-align: top;
+        background: #2b3c5b;
+      }
+      .col-1-content {
+        color: #fff;
+        padding-left: 20px;
+        font-family: poppins;
+        font-size: 14px;
+        line-height: 22px;
+        width: 340px;
+        font-weight: 300;
+      }
+      .col-1-content-image {
+        width: 80%;
+        padding-left: 20px;
+      }
+      .col-1-button {
+        margin-left: 20px;
+        margin-top: 40px;
+        background: #c9a516;
+        padding: 10px 30px;
+        color: #ffff;
+        font-family: "Poppins";
+        margin-bottom: 10px;
+        border: none;
+        min-width: 250px;
+      }
+      .col-1-end-image {
+        padding-left: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .col-2-content {
+        color: #fff;
+        padding-left: 20px;
+        font-family: "Poppins";
+      }
+      .first-post {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        color: #fff;
+        font-family: "Poppins", Arial, sans-serif;
+      }
+      .stat-card {
+        padding: 10px 10px 10px 20px;
+      }
+      .cards {
+        padding-left: 20px;
+      }
+      .post {
+        padding-left: 20px;
+        margin-top: 20px;
+      }
+      @media screen and (max-width: 430px) {
+        .footer {
+          background-color: #333;
+          padding: 20px;
+          text-align: center;
+          color: #fff;
+          font-family: Poppins, Arial, sans-serif;
+        }
+        .table-col-1,
+        .table-col-2 {
+          width: 100%;
+          display: block;
+          padding-right: 0;
+          padding-left: 0;
+          padding-bottom: 100px;
+        }
+        .spacer {
+          width: 120px;
+          margin-left: 15px;
+        }
+        .table-col-1-para {
+          padding-left: 15px;
+          font-family: Poppins, Arial, sans-serif;
+          font-size: 30px;
+        }
+        .col-1-content {
+          padding-left: 15px;
+          width: 96%;
+          font-size: 18px;
+          line-height: 30px;
+          padding-right: 15px;
+        }
+        .col-1-content-image {
+          width: 100%;
+          padding-left: 0px;
+        }
+        .col-1-button {
+          margin: 0;
+          width: 30%;
+          margin-bottom: 10px;
+          margin-left: 15px;
+        }
+        .col-1-end-image {
+          padding-left: 0px;
+          transform: translate(220px, -1px);
+        }
+        .col-2-content {
+          padding-left: 15px;
+        }
+        .first-post {
+          text-align: left;
+          padding: 0 15px;
+        }
+        .stat-card {
+          padding: 10px;
+          text-align: center;
+        }
+        .cards {
+          padding-left: 15px;
+        }
+        .post {
+          padding-left: 0px;
+        }
+
+        .pbd_post-group {
+          display: flex;
+        }
+
+        .pbd_email-template-container {
+          max-width: 430px;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    "
+  >
+    <div class="pbd_email-template-container">
+      <table
+        cellspacing="0"
+        role="presentation"
+        style="
+          border-spacing: 0;
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          background-color: #ffffff;
+        "
+      >
+        <tr>
+          <td
+            style="background-color: #2a2a2a; padding: 20px; text-align: center"
+          >
+            <img
+              src="https://i.ibb.co/8xpPw73/Innova-logo.png"
+              alt="Company Logo"
+              style="margin-right: 20px; float: left"
+            />
+            <img
+              src="https://i.ibb.co/Dz3722k/Aligned-logo.png"
+              alt="Partner Logo"
+              style="float: right"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td
+            style="
+              background-color: #333333;
+              padding: 10px;
+              text-align: center;
+              border-top: 2px solid #e2bf77;
+              border-bottom: 2px solid #e2bf77;
+              letter-spacing: 1px;
+            "
+          >
+            <a
+              href="https://inwp.ca/what-we-do/our-process.html"
+              target="_blank"
+              style="
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0 10px;
+                font-size: 13px;
+                border-right: 1px solid #e2bf77;
+                font-family: poppins;
+                color: #e2bf77;
+              "
+              >OUR PROCESS</a
+            >
+            <a
+              href="https://inwp.ca/what-we-do.html"
+              target="_blank"
+              style="
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0 10px;
+                font-size: 13px;
+                border-right: 1px solid #e2bf77;
+                font-family: poppins;
+                color: #e2bf77;
+              "
+              >OUR SERVICES</a
+            >
+            <a
+              href="https://inwp.ca/your-financial-goals/your-financial-freedom.html"
+              target="_blank"
+              style="
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0 10px;
+                font-size: 13px;
+                border-right: 1px solid #e2bf77;
+                font-family: poppins;
+                color: #e2bf77;
+              "
+              >YOUR FINANCIAL COACH</a
+            >
+            <a
+              href="https://inwp.ca/resources.html"
+              target="_blank"
+              style="
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0 10px;
+                font-size: 13px;
+                font-family: poppins;
+                color: #e2bf77;
+              "
+              >RESOURCES</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 0; margin: 0">
+            <div
+              class="div"
+              style="
+                position: relative;
+                text-align: center;
+                color: #000;
+                margin: 0;
+                padding: 0;
+              "
+            >
+              <img
+                src="https://i.ibb.co/CWm8qGH/Image-2.png"
+                alt=""
+                style="width: 800px; margin: 0; padding: 0; display: block"
+              />
+              <p
+                style="
+                  position: absolute;
+                  top: 50%;
+                  right: 60%;
+                  left: 93.5%;
+                  transform: translate(-50%, -10%);
+                  color: #fff;
+                  font-size: 71px;
+                  width: 50px;
+                  margin: 0;
+                  padding: 0;
+                "
+              >
+                “
+              </p>
+              <p
+                style="
+                  width: 300px;
+                  position: absolute;
+                  top: 70%;
+                  left: 80%;
+                  transform: translate(-50%, -70%);
+                  color: #fff;
+                  font-size: 14px;
+                  font-family: poppins;
+                  font-style: italic;
+                  margin: 0;
+                  padding: 0;
+                "
+              >
+                Be fearful when others are greedy<br />
+                and greedy when others are fearful.
+              </p>
+              <p
+                style="
+                  position: absolute;
+                  top: 78%;
+                  left: 90%;
+                  transform: translate(-50%, -70%);
+                  color: #fff;
+                  font-size: 14px;
+                  font-weight: 400;
+                  width: 100px;
+                  margin: 0;
+                  padding: 0;
+                "
+              >
+                Warren Buffet
+              </p>
+              <div
+                style="
+                  text-align: center;
+                  background: #333;
+                  max-width: 100px;
+                  padding: 20px;
+                  border-top-right-radius: 900px;
+                  position: absolute;
+                  bottom: 0px;
+                  width: 100%;
+                  border-top-left-radius: 340px 60px;
+                "
+              >
+                <img src="https://i.ibb.co/ZXqVKjk/Logo-Icon.png" alt="" />
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table role="presentation" style="width: 100%; border-spacing: 0">
+              <tr>
+                <td class="table-col-1">
+                  <p class="table-col-1-para">2024 Q2 INVESTMENT REVIEW</p>
+
+                  <div class="spacer"></div>
+
+                  <p class="col-1-content">
+                    Five years ago, J-F Démoré and Cliff Richardson joined
+                    forces to launch Northern Ontario’s first pooled fund at
+                    Innova. Fueled by a mix of greed and fear, they aimed to
+                    offer more than what was available for their own portfolios
+                    while providing solutions to mitigate sequence of return and
+                    emotional risks for clients. Their objective was clear: earn
+                    more than the 4% return required by a prudent retirement
+                    plan with minimal volatility. As of June 30th, 2024, their
+                    5-year annualized rate of return, calculated by a
+                    third-party, stood at 6.26%.
+                  </p>
+                  <img
+                    src="https://i.ibb.co/P1VV1Xv/Q2-investment-image.jpg"
+                    alt=""
+                    class="col-1-content-image"
+                  />
+                  <p class="col-1-content">
+                    The Innova Tactical Asset Allocation Private Pool (ITAAP)
+                    was designed to control portfolio volatility by diversifying
+                    beyond traditional stocks and bonds. Over the past five
+                    years, the Tactical Pool has reduced drawdowns during
+                    downturns and slightly outperformed peers. This success has
+                    led to the launch of the Enhanced Growth fund and Dedicated
+                    Defensive strategy.
+                  </p>
+                  <p class="col-1-content">
+                    Innova remains dedicated to transparency and delivering
+                    value through consistent returns and managed volatility. The
+                    team expresses deep appreciation for the trust clients have
+                    placed in them and looks forward to continuing to exceed
+                    investment objectives together. Thank you for your
+                    partnership.
+                  </p>
+                  <button class="col-1-button">Tactical Pool Report</button>
+                  <button class="col-1-button">Enhanced Growth Report</button>
+                  <img
+                    src="https://i.ibb.co/r5gWfpc/building.png"
+                    alt=""
+                    class="col-1-end-image"
+                  />
+                </td>
+
+                <td class="table-col-2">
+                  <p
+                    style="
+                      font-family: Poppins, Arial, sans-serif;
+                      font-size: 14px;
+                      color: #fff;
+                    "
+                  ></p>
+
+                  <p class="table-col-1-para">MARKET UPDATE</p>
+                  <div class="spacer"></div>
+                  <p class="col-2-content">AS AT 19TH JULY</p>
+                  <div class="cards">
+                    <div
+                      style="
+                        width: 45%;
+                        background-color: #354869;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 3%;
+                        box-sizing: border-box;
+                        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+                      "
+                    >
+                      <div class="stat-card">
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <img
+                            src="https://i.ibb.co/7Nh7TBP/green-icon.png"
+                            alt=""
+                            style="
+                              vertical-align: middle;
+                              display: inline-block;
+                            "
+                          />
+                        </div>
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <p
+                            style="
+                              color: #e2bf77;
+                              font-family: 'Poppins', Arial, sans-serif;
+                              font-size: 22px;
+                              padding-left: 10px; /* Adjust padding as needed */
+                              margin: 0;
+                            "
+                          >
+                            8.3%
+                          </p>
+                        </div>
+                      </div>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 10px 10px 10px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        Toronto (TSX)
+                      </p>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 0px 10px 20px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        22,690
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        width: 45%;
+                        background-color: #354869;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 3%;
+                        box-sizing: border-box;
+                        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+                      "
+                    >
+                      <div class="stat-card">
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <img
+                            src="https://i.ibb.co/PNjRxRM/red-icon.png"
+                            alt=""
+                            style="
+                              vertical-align: middle;
+                              display: inline-block;
+                            "
+                          />
+                        </div>
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <p
+                            style="
+                              color: #e2bf77;
+                              font-family: 'Poppins', Arial, sans-serif;
+                              font-size: 22px;
+                              padding-left: 10px; /* Adjust padding as needed */
+                              margin: 0;
+                            "
+                          >
+                            -0.8%
+                          </p>
+                        </div>
+                      </div>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 10px 10px 10px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        Cdn Bonds (Agg)
+                      </p>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 0px 10px 20px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        255
+                      </p>
+                    </div>
+                  </div>
+
+                  <div style="padding-left: 20px; margin-top: 20px">
+                    <div
+                      style="
+                        width: 45%;
+                        background-color: #354869;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 3%;
+                        box-sizing: border-box;
+                        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+                      "
+                    >
+                      <div class="stat-card">
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <img
+                            src="https://i.ibb.co/7Nh7TBP/green-icon.png"
+                            alt=""
+                            style="
+                              vertical-align: middle;
+                              display: inline-block;
+                            "
+                          />
+                        </div>
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <p
+                            style="
+                              color: #e2bf77;
+                              font-family: 'Poppins', Arial, sans-serif;
+                              font-size: 22px;
+                              padding-left: 10px; /* Adjust padding as needed */
+                              margin: 0;
+                            "
+                          >
+                            20.1%
+                          </p>
+                        </div>
+                      </div>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 10px 10px 10px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        NY (S&P 500)
+                      </p>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 0px 10px 20px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        5505
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        width: 45%;
+                        background-color: #354869;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 3%;
+                        box-sizing: border-box;
+                        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+                      "
+                    >
+                      <div class="stat-card">
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <img
+                            src="https://i.ibb.co/7Nh7TBP/green-icon.png"
+                            alt=""
+                            style="
+                              vertical-align: middle;
+                              display: inline-block;
+                            "
+                          />
+                        </div>
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <p
+                            style="
+                              color: #e2bf77;
+                              font-family: 'Poppins', Arial, sans-serif;
+                              font-size: 22px;
+                              padding-left: 10px; /* Adjust padding as needed */
+                              margin: 0;
+                            "
+                          >
+                            16.7%
+                          </p>
+                        </div>
+                      </div>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 10px 10px 10px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        Global (MSCI)
+                      </p>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 0px 10px 20px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        3,554
+                      </p>
+                    </div>
+                  </div>
+
+                  <div style="padding-left: 20px; margin-top: 20px">
+                    <div
+                      style="
+                        width: 45%;
+                        background-color: #354869;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 3%;
+                        box-sizing: border-box;
+                        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+                      "
+                    >
+                      <div class="stat-card">
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <img
+                            src="https://i.ibb.co/7Nh7TBP/green-icon.png"
+                            alt=""
+                            style="
+                              vertical-align: middle;
+                              display: inline-block;
+                            "
+                          />
+                        </div>
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <p
+                            style="
+                              color: #e2bf77;
+                              font-family: 'Poppins', Arial, sans-serif;
+                              font-size: 22px;
+                              padding-left: 10px; /* Adjust padding as needed */
+                              margin: 0;
+                            "
+                          >
+                            10.8%
+                          </p>
+                        </div>
+                      </div>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 10px 10px 10px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        Emerging (MSCI)
+                      </p>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 0px 10px 20px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        1.090
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        width: 45%;
+                        background-color: #354869;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 3%;
+                        box-sizing: border-box;
+                        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+                      "
+                    >
+                      <div class="stat-card">
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <img
+                            src="https://i.ibb.co/7Nh7TBP/green-icon.png"
+                            alt=""
+                            style="
+                              vertical-align: middle;
+                              display: inline-block;
+                            "
+                          />
+                        </div>
+                        <div
+                          style="display: inline-block; vertical-align: middle"
+                        >
+                          <p
+                            style="
+                              color: #e2bf77;
+                              font-family: 'Poppins', Arial, sans-serif;
+                              font-size: 22px;
+                              padding-left: 10px; /* Adjust padding as needed */
+                              margin: 0;
+                            "
+                          >
+                            9.8%
+                          </p>
+                        </div>
+                      </div>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 10px 10px 10px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        Oil (WTI)
+                      </p>
+                      <p
+                        style="
+                          color: #fff;
+                          font-family: 'Poppins', Arial, sans-serif;
+                          font-size: 12px;
+                          margin: 0;
+                          padding: 0px 10px 20px 10px;
+                          text-align: center;
+                          letter-spacing: 1px;
+                        "
+                      >
+                        78.64
+                      </p>
+                    </div>
+                  </div>
+                  <p class="table-col-1-para">INTERESTING LINKS</p>
+                  <div class="spacer"></div>
+                  <div class="pbd_post-group">
+                    <div class="post">
+                      <div class="first-post">
+                        <div style="margin-bottom: 10px">
+                          <img
+                            src="https://i.ibb.co/S0Z8k93/image-1.png"
+                            alt="Video Thumbnail"
+                            style="max-width: 100%; height: auto"
+                          />
+                        </div>
+                        <h3 style="font-size: 16px; margin-bottom: 10px">
+                          FINANCIAL LITERACY
+                        </h3>
+                        <p class="first-post-content">
+                          Ontario students will soon be required to pass a
+                          financial literacy test as part of a number of
+                          changes..
+                        </p>
+                      </div>
+                    </div>
+                    <div class="post">
+                      <div class="first-post">
+                        <div style="margin-bottom: 10px">
+                          <img
+                            src="https://i.ibb.co/b3LxDZx/image.png"
+                            alt="Image Thumbnail"
+                            style="max-width: 100%; height: auto"
+                          />
+                        </div>
+                        <h3 style="font-size: 16px; margin-bottom: 10px">
+                          REAL ESTATE
+                        </h3>
+                        <p class="first-post-content">
+                          Fewer home sales and lower average housing prices in
+                          Canada compared to last year...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="background-color: #000">
+          <td
+            style="
+              text-align: center;
+              vertical-align: middle;
+              height: 100px;
+              padding-bottom: 80px;
+            "
+          >
+            <p
+              style="
+                color: #fff;
+                margin: 0;
+                font-size: 20px;
+                font-family: Poppins, Arial, sans-serif;
+                font-weight: 400;
+                padding-top: 50px;
+                letter-spacing: 1px;
+              "
+            >
+              YOUR FINANCIAL FREEDOM
+            </p>
+            <div
+              style="
+                width: 85px;
+                height: 1px;
+                margin: 10px auto 0 auto;
+                background-color: #e2bf77;
+              "
+            ></div>
+            <p
+              style="
+                color: #fff;
+                font-family: Poppins, Arial, sans-serif;
+                font-size: 12px;
+                line-height: 22px;
+                margin-top: 20px;
+                width: 700px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Our approach towards financial planning is conveyed to the client
+              in an open, easy-to-understand setting. Innova Advisors work with
+              you throughout all the stages of life as your goals evolve,
+              identifying the best means of achieving them given your particular
+              situation.
+            </p>
+            <button
+              style="
+                background-color: #017aff;
+                color: #fff;
+                font-family: 'Poppins';
+                padding: 10px 30px;
+                border: none;
+                font-size: 14px;
+                min-width: 250px;
+                font-weight: 500;
+              "
+            >
+              Meet With Our Visitors
+            </button>
+          </td>
+        </tr>
+      </table>
+      <div class="footer">
+        <img
+          src="https://i.ibb.co/ZXqVKjk/Logo-Icon.png"
+          alt=""
+          style="
+            text-align: center;
+            background: #3333;
+            border-radius: 50px;
+            max-width: 90px;
+            background: #333;
+            max-height: 90px;
+            padding: 20px;
+            margin-top: -50px;
+          "
+        />
+        <p style="margin: 0; font-size: 12px">
+          888 Regent Street, Suite 208.,Sudbury, ON P3E 6C6
+        </p>
+        <p style="margin: 0; font-size: 12px; word-spacing: 5px">
+          1-855-855-1213 | contactus@inwp.ca |
+          <a href="https://inwp.ca/" style="color: #fff">inwp.ca</a>
+        </p>
+        <div style="margin-top: 20px">
+          <a href="http://"
+            ><img
+              src="https://i.ibb.co/9nXMWJ5/LinkedIn.png"
+              alt=""
+              style="padding-right: 10px"
+          /></a>
+          <a href="http://"
+            ><img src="https://i.ibb.co/qDB5MkQ/Facebook.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
